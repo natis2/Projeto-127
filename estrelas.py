@@ -14,8 +14,6 @@ browser.get(START_URL)
 
 time.sleep(10)
 
-#Professora, está dando um erro no meu código e não estou conseguindo resolver...
-
 scarped_data = []
 
 stars_data = []
