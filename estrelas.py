@@ -42,16 +42,16 @@ def scrape():
             temp_list.append(data)
 
         scarped_data.append(temp_list)  
+scrape()
+for i in range(0,len(scarped_data)): 
+    Star_names = scarped_data[i][1]
+    Distance = scarped_data[i][3]
+    Mass = scarped_data[i][5]
+    Radius = scarped_data[i][6]
+    Lum = scarped_data[i][7]
 
-    for i in range(0,len(scarped_data)): 
-        Star_names = scarped_data[i][1]
-        Distance = scarped_data[i][3]
-        Mass = scarped_data[i][5]
-        Radius = scarped_data[i][6]
-        Lum = scarped_data[i][7]
-
-        required_data = [Star_names,Distance,Mass,Radius,Lum]
-        stars_data.append(required_data)
+    required_data = [Star_names,Distance,Mass,Radius,Lum]
+    stars_data.append(required_data)
 
 headers = ['Star_name','Distance','Mass','Radius','Luminosity']
 
